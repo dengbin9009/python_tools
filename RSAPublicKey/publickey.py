@@ -13,7 +13,7 @@ n = '9585A4773ABEECB949701D49762F2DFAB9599BA19DFE1E1A2FA200E32E0444F426DA528912D
 
 key = RSA.construct((int(n,16),int('10001',16)))  
 public_key = key.publickey().exportKey() 
-print(public_key)  
+print(public_key.decode())
 
 
 # ----- python2效果更好  ----
